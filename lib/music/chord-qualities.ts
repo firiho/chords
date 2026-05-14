@@ -1,0 +1,31 @@
+import type { ChordQuality } from "@/types/music";
+
+export const CHORD_QUALITIES: ChordQuality[] = [
+  { name: "", intervals: [0, 4, 7], score: 100 },
+  { name: "m", intervals: [0, 3, 7], score: 100 },
+  { name: "5", intervals: [0, 7], score: 82 },
+  { name: "sus2", intervals: [0, 2, 7], score: 96 },
+  { name: "sus4", intervals: [0, 5, 7], score: 96 },
+  { name: "sus4add9", intervals: [0, 2, 5, 7], score: 102 },
+  { name: "add9", intervals: [0, 2, 4, 7], score: 103 },
+  { name: "madd9", intervals: [0, 2, 3, 7], score: 103 },
+  { name: "6", intervals: [0, 4, 7, 9], score: 103 },
+  { name: "m6", intervals: [0, 3, 7, 9], score: 103 },
+  { name: "7", intervals: [0, 4, 7, 10], score: 110 },
+  { name: "maj7", intervals: [0, 4, 7, 11], score: 110 },
+  { name: "m7", intervals: [0, 3, 7, 10], score: 110 },
+  { name: "dim", intervals: [0, 3, 6], score: 100 },
+  { name: "dim7", intervals: [0, 3, 6, 9], score: 112 },
+  { name: "m7b5", intervals: [0, 3, 6, 10], score: 112 },
+  { name: "aug", intervals: [0, 4, 8], score: 100 },
+  { name: "9", intervals: [0, 2, 4, 7, 10], score: 118 },
+  { name: "maj9", intervals: [0, 2, 4, 7, 11], score: 118 },
+  { name: "m9", intervals: [0, 2, 3, 7, 10], score: 118 },
+  { name: "9sus4", intervals: [0, 2, 5, 7, 10], score: 120 },
+  { name: "11", intervals: [0, 2, 4, 5, 7, 10], score: 121 },
+  { name: "m11", intervals: [0, 2, 3, 5, 7, 10], score: 121 },
+  { name: "13", intervals: [0, 2, 4, 7, 9, 10], score: 124 },
+  { name: "maj13", intervals: [0, 2, 4, 7, 9, 11], score: 124 },
+  { name: "13sus4", intervals: [0, 2, 5, 7, 9, 10], score: 125 },
+  { name: "7alt", intervals: [0, 1, 3, 4, 6, 8, 10], score: 128 }
+];

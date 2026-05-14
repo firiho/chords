@@ -1,0 +1,57 @@
+.logoWrapper {
+  position: relative;
+  width: 42px;
+  height: 48px;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hexContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--accent-color);
+  transition: var(--transition);
+}
+
+.hexContainer polygon {
+  /* Use a solid background color instead of transparent accent-hover */
+  fill: var(--bg-color); 
+  transition: var(--transition);
+}
+
+.logoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--accent-color);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+  Refined hover effect: 
+  The icon shifts slightly up and left, 
+  and a solid green shadow appears behind it.
+*/
+.logoWrapper:hover {
+  transform: translate(-3px, -3px);
+}
+
+.logoWrapper:hover .hexContainer {
+  /* Solid green shadow (no blur for that 'hard' effect seen in many portfolio themes) */
+  filter: drop-shadow(6px 6px 0px var(--accent-color));
+}
+
+.logoWrapper:hover .hexContainer polygon {
+  /* Maintain solid background on hover */
+  fill: var(--bg-color-light); 
+}
