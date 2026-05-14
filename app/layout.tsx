@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 import type { ReactNode } from "react";
 
 import Intro from "@/components/intro/intro";
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <BackgroundPadHost />
         {children}
       </body>
+      <Analytics/>
     </html>
   );
 }
